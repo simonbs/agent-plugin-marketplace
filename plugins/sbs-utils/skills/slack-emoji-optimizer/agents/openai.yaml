@@ -1,0 +1,4 @@
+interface:
+  display_name: "Slack Emoji Optimizer"
+  short_description: "Convert animated images into Slack-ready emoji"
+  default_prompt: "Optimize these images as high-quality Slack custom emoji while preserving animation and transparency."

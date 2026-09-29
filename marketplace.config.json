@@ -1,0 +1,28 @@
+{
+  "marketplace": {
+    "name": "sbs",
+    "displayName": "Simon B. Støvring",
+    "description": "Personal agent plugins by Simon B. Støvring for Codex and Claude Code.",
+    "version": "0.1.0",
+    "owner": {
+      "name": "Simon B. Støvring"
+    }
+  },
+  "defaults": {
+    "category": "Productivity"
+  },
+  "plugins": {
+    "sbs-dev": {
+      "displayName": "sbs-dev",
+      "marketplaceDescription": "Development skills for pull request feedback and Swift build output."
+    },
+    "sbs-utils": {
+      "displayName": "sbs-utils",
+      "marketplaceDescription": "Utilities for raffle drawings and animated Slack emoji."
+    },
+    "sbs-news": {
+      "displayName": "sbs-news",
+      "marketplaceDescription": "Find Danish news candidates for Langt fra løgnen’s sidelæns Pulitzer."
+    }
+  }
+}

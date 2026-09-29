@@ -1,0 +1,4 @@
+interface:
+  display_name: "Banzai PR Feedback Loop"
+  short_description: "Loop on Banzai PR blockers"
+  default_prompt: "Use $banzai-pr-feedback-loop to monitor this PR and address Banzai Codes blockers until the current head is clean."

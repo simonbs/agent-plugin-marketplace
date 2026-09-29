@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sbs-utils",
+  "version": "1.0.0",
+  "description": "Everyday utilities for raffles and Slack emoji.",
+  "author": {
+    "name": "Simon B. Støvring"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "agent-plugin",
+    "skills"
+  ]
+}

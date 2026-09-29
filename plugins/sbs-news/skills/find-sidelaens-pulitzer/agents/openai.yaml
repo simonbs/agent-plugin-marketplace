@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find sidelæns Pulitzer"
+  short_description: "Finder en artikel og skriver en lyttermail"
+  default_prompt: "Brug $find-sidelaens-pulitzer til at finde ugens bedste artikel og skrive en casual indsendelsesmail til Langt fra løgnen."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Raffle"
+  short_description: "Draw, record, and safely announce unique CSV winners"
+  default_prompt: "Use $raffle to pick a winner from my CSV."

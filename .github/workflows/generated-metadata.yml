@@ -1,0 +1,62 @@
+name: Generated Metadata
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - marketplace.config.json
+      - scripts/generate_native_metadata.py
+      - plugins/*/plugin.json
+      - plugins/*/skills/**
+      - plugins/*/mcp.json
+      - plugins/*/.mcp.json
+      - .claude-plugin/marketplace.json
+      - .github/workflows/generated-metadata.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+      - name: Generate metadata
+        run: python3 scripts/generate_native_metadata.py
+      - name: Fail on drift outside PRs
+        if: ${{ github.event_name != 'pull_request' }}
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git status --short
+            echo "Generated metadata changed. Run python3 scripts/generate_native_metadata.py and commit the result."
+            exit 1
+          fi
+      - name: Commit and push if needed
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add \
+              .claude-plugin/marketplace.json \
+              'plugins/*/.mcp.json'
+            git commit -m "chore: regenerate native plugin metadata"
+            git pull --rebase
+            git push
+          else
+            echo "No changes to commit."
+          fi
+      - name: Check generated metadata
+        run: python3 scripts/generate_native_metadata.py --check

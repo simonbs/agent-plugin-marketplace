@@ -1,0 +1,55 @@
+{
+  "name": "sbs",
+  "owner": {
+    "name": "Simon B. Støvring"
+  },
+  "description": "Personal agent plugins by Simon B. Støvring for Codex and Claude Code.",
+  "version": "0.1.0",
+  "plugins": [
+    {
+      "name": "sbs-dev",
+      "source": "./plugins/sbs-dev",
+      "displayName": "sbs-dev",
+      "description": "Development skills for pull request feedback and Swift build output.",
+      "version": "1.0.0",
+      "category": "Productivity",
+      "tags": [
+        "agent-plugin",
+        "skills"
+      ],
+      "author": {
+        "name": "Simon B. Støvring"
+      }
+    },
+    {
+      "name": "sbs-news",
+      "source": "./plugins/sbs-news",
+      "displayName": "sbs-news",
+      "description": "Find Danish news candidates for Langt fra løgnen’s sidelæns Pulitzer.",
+      "version": "1.0.0",
+      "category": "Productivity",
+      "tags": [
+        "agent-plugin",
+        "skills"
+      ],
+      "author": {
+        "name": "Simon B. Støvring"
+      }
+    },
+    {
+      "name": "sbs-utils",
+      "source": "./plugins/sbs-utils",
+      "displayName": "sbs-utils",
+      "description": "Utilities for raffle drawings and animated Slack emoji.",
+      "version": "1.0.0",
+      "category": "Productivity",
+      "tags": [
+        "agent-plugin",
+        "skills"
+      ],
+      "author": {
+        "name": "Simon B. Støvring"
+      }
+    }
+  ]
+}
