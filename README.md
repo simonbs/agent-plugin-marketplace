@@ -1,4 +1,4 @@
-# 🧩 sbs Agent Plugin Marketplace
+# 🧩 Agent Plugin Marketplace
 
 Personal agent plugins for Codex and Claude Code. The marketplace name is `sbs`.
 
