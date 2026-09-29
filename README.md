@@ -1,15 +1,17 @@
-# Simon B. Støvring’s Agent Plugin Marketplace
+# 🧩 sbs Agent Plugin Marketplace
 
 Personal agent plugins for Codex and Claude Code. The marketplace name is `sbs`.
 
-## Table of contents
+## 📚 Table of contents
 
-- [Plugins](#plugins)
-- [Install](#install)
-- [Update](#update)
-- [Remove](#remove)
+- [🧩 Plugins](#plugins)
+- [📦 Install](#install)
+- [🔄 Update](#update)
+- [🗑️ Remove](#remove)
 
-## Plugins
+<a id="plugins"></a>
+
+## 🧩 Plugins
 
 | Plugin | Description |
 | --- | --- |
@@ -17,7 +19,9 @@ Personal agent plugins for Codex and Claude Code. The marketplace name is `sbs`.
 | [sbs-utils](plugins/sbs-utils/README.md) | Draw raffle winners from CSV files and convert animated WebP images into Slack emoji GIFs. |
 | [sbs-news](plugins/sbs-news/README.md) | Find Danish news candidates for Langt fra løgnen’s sidelæns Pulitzer and draft listener submissions. |
 
-## Install
+<a id="install"></a>
+
+## 📦 Install
 
 ### Codex
 
@@ -39,7 +43,9 @@ claude plugin install sbs-news@sbs
 
 Install only the plugins you want. To use a local checkout, replace the marketplace add command above with `codex plugin marketplace add /path/to/agent-plugin-marketplace` or `claude plugin marketplace add /path/to/agent-plugin-marketplace`.
 
-## Update
+<a id="update"></a>
+
+## 🔄 Update
 
 ### Codex
 
@@ -63,7 +69,9 @@ claude plugin update sbs-news@sbs
 
 Restart Claude Code after updating to load the new plugin versions.
 
-## Remove
+<a id="remove"></a>
+
+## 🗑️ Remove
 
 ### Codex
 
