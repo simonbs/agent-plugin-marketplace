@@ -1,3 +1,11 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Local credentials and simulator sessions are not plugin source.
+.env
+.env.*
+!.env.example
+sbs-remote-simulator/
+remote-simulator-smoke/
+remote-preview.json

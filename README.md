@@ -15,7 +15,7 @@ Personal agent plugins for Codex and Claude Code. The marketplace name is `sbs`.
 
 | Plugin | Description |
 | --- | --- |
-| [sbs-dev](plugins/sbs-dev/README.md) | Address pull request review blockers with the Banzai feedback loop and parse Swift and Xcode build output with xcsift. |
+| [sbs-dev](plugins/sbs-dev/README.md) | Stream iOS simulators to your phone, address pull request review blockers, and parse Swift and Xcode build output. |
 | [sbs-utils](plugins/sbs-utils/README.md) | Draw raffle winners from CSV files and convert animated WebP images into Slack emoji GIFs. |
 | [sbs-news](plugins/sbs-news/README.md) | Find Danish news candidates for Langt fra løgnen’s sidelæns Pulitzer and draft listener submissions. |
 

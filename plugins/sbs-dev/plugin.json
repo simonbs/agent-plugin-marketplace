@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sbs-dev",
-  "version": "1.0.0",
-  "description": "Developer skills for pull request feedback and Swift build diagnostics.",
+  "version": "1.1.0",
+  "description": "Developer skills for remote iOS simulators, pull request feedback, and Swift build diagnostics.",
   "author": {
     "name": "Simon B. Støvring"
   },
