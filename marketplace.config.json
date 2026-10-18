@@ -14,7 +14,7 @@
   "plugins": {
     "sbs-dev": {
       "displayName": "sbs-dev",
-      "marketplaceDescription": "Development skills for pull request feedback and Swift build output."
+      "marketplaceDescription": "Development skills for remote iOS simulators, pull request feedback, and Swift build output."
     },
     "sbs-utils": {
       "displayName": "sbs-utils",
